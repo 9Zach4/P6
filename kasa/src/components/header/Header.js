@@ -1,4 +1,5 @@
 import Logo from '../../assets/logo.png'; 
+import Navbar from '../navbar/Navbar';
 
 export function Header() {
     return (
@@ -6,6 +7,7 @@ export function Header() {
             <h1>
                 <img src = {Logo} alt="logo de Kasa, location d'appartement" />
             </h1>
+            <Navbar />
         </header>
     )
 }
