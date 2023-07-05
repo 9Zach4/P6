@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-
-
+import './navbar.scss';
 const currentRoute = window.location.pathname;  
 
 function Navbar() {
