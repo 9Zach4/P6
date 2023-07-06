@@ -7,19 +7,20 @@
     position: relative;
     border-radius: 10px ; 
     cursor: pointer;
-    transition : box-shadow 0.3s ease-in-out;
+    transition : box-shadow 0.2s ease-in-out;
     overflow: hidden;
-    @media screen and (max-width: 1240px) {
-        width: 340px;
+    @media screen and (max-width: 1230px) {
+        width: 250px;
         
     }
     @media screen and (max-width: 900px) {
-        width: 240px;
-    
+        width: 29rem;
+      
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
         height: 200px;
-        width: 240px;
+      
+        
     }
     &::after {
         content: "";
@@ -32,19 +33,21 @@
     }
 
     &:hover {
-        box-shadow: 0px 0px 3px 10px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 8px  rgba(0,0,0,0.75);
     }
     img {
         object-fit: cover;
         width: 100%;
         height: 100%;
-        transition: transform 0.3s ease-in-out;
+        object-position: center;
+        transition: transform 0.2s ease-in-out;
         will-change: transform;
     }
     h3 {
         position: absolute;
         bottom: 20px;
         right: 20px;
+        z-index: 20;
         left: 20px;
         font-weight: 500;
         color: $color-primary;
