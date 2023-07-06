@@ -1,4 +1,5 @@
 @import "../../sass/main.scss";
+@import "../../sass/base/index.scss";
 
 .card_gallery {
     height: 340px;   
@@ -27,5 +28,25 @@
         width: 100%;
         height: 100%;
         background: linear-gradient(180deg,#fafafa00 0%, #00000080 100%);
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 3px 10px rgba(0,0,0,0.75);
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-in-out;
+        will-change: transform;
+    }
+    h3 {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        font-weight: 500;
+        color: $color-primary;
+        font-size: clamp(12px,3vw, 18px);
     }
 }
