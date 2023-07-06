@@ -6,8 +6,8 @@ function Navbar() {
   return (
     <nav className="navbar">
     <ul className="navbar_list">
-        <li className={currentRoute === "/kasa/" ? "navbar_list_item_active" : "navbar_list_item"}>
-            <Link to="/kasa/">
+        <li className={currentRoute === "/" ? "navbar_list_item_active" : "navbar_list_item"}>
+            <Link to="/">
                 Accueil
             </Link>
         </li>

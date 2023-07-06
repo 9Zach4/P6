@@ -6,6 +6,15 @@
     font-style: normal;
 }
 
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 body {
     max-width: 1440px;
     margin: 0 auto;
