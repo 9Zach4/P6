@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom';
 import './navbar.scss';
-const currentRoute = window.location.pathname;  
+import { useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const location = useLocation();
   return (
     <nav className="navbar">
     <ul className="navbar_list">
-        <li className={currentRoute === "/" ? "navbar_list_item_active" : "navbar_list_item"}>
+        <li className={location.pathname === "/" ? "navbar_list_item_active" : "navbar_list_item"}>
             <Link to="/">
                 Accueil
             </Link>
         </li>
-        <li className={currentRoute === "/about" ? "navbar_list_item_active" : "navbar_list_item"}>
+        <li className={location.pathname === "/about" ? "navbar_list_item_active" : "navbar_list_item"}>
             <Link to="/about">
                 A propos
             </Link>    
@@ -20,5 +21,6 @@ function Navbar() {
     </nav>
   );
 }
+
 
 export default Navbar;
