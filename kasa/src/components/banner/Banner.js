@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState} from 'react';
 import './banner.scss';
 
 function Banner() {
@@ -11,6 +11,7 @@ function Banner() {
 	useEffect(() => {
 		if(location.pathname === '/about'){
 			setAboutPage(true)
+		
 		};
 	
 	}, [])
