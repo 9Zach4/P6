@@ -34,7 +34,7 @@ return (
         <Header />
         <Banner />
         <main className= "about_main">
-            {aboutData.map((data) => {
+            {aboutData.map(data => {
                 return (
                     <div key={data.id} className="about_main_collapse">
                         <Collapses style= {{margin:'30px 0'}} title={data.title} content={data.content} />

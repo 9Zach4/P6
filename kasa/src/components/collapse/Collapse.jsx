@@ -2,7 +2,7 @@ import arrow from "../../assets/arrow.png";         // import arrow imagee
 import { useState } from 'react'; 
 import './collapse.scss';                          // import collapse style
 
-function Collapse ({ title, content }) { 
+function Collapses ({ title, content }) { 
     const [toggle, setToggle] = useState(false);
     return (
         <>
@@ -28,4 +28,4 @@ function Collapse ({ title, content }) {
     )
 }
 
-export default Collapse;
+export default Collapses;
