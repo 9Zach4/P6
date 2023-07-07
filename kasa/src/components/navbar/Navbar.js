@@ -12,7 +12,7 @@ function Navbar() {
             </Link>
         </li>
         <li className={currentRoute === "/about" ? "navbar_list_item_active" : "navbar_list_item"}>
-            <Link to="/about/">
+            <Link to="/about">
                 A propos
             </Link>    
         </li>
