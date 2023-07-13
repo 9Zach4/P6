@@ -1,20 +1,26 @@
-@import '../../sass/main.scss';
 
-.navbar_list {
+@import "../../scss/variables.scss";
+
+.navbar {
     display: flex;
-    gap: 50px;
-    color: $color-secondary;
-    font-size: clamp(12px, 2.5vw, 24px);
-    @media screen and (max-width: 700px){
-        gap: 20px;
-    }
-    &_item{
-        &_active{
-            position: relative;
-            color: $color-secondary;
-            transition: all 0.2s ease-in-out;
-            text-decoration: underline solid $color-secondary; 
-            
-        }
-    }
+    align-items: center;
+    margin: 4vh 8vh 5vh 8vh;
+    grid-gap: 2rem;
+    gap: 2rem;
+& > *:first-child {
+    margin-right: auto;
 }
+& a {
+    text-decoration: none;
+    color: $color-primary;
+    &.active, &:hover{
+    text-decoration: underline;
+
+   
+}
+
+}
+}
+
+
+
