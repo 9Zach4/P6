@@ -1,5 +1,5 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
-import App from "../App";
+import HomePage from "../pages/HomePage/HomePage";
 import Footer from "../layout/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 import React from "react";
@@ -12,7 +12,6 @@ const  HeaderFooter = () => {
         <Main>
           <Outlet />
         </Main>
-        
         <Footer />
         </>
     );
@@ -31,7 +30,7 @@ export const router = createBrowserRouter([
     {
       path: "/",
       element: 
-        <App />
+        <HomePage />
       
     },
   
