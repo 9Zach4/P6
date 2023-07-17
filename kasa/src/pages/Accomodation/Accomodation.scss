@@ -1,0 +1,84 @@
+@import "../../scss/variables.scss"; 
+
+.house-hold {
+    color: $color-primary;  
+    div:first-child {
+        margin-bottom: 1rem;
+    }
+ h1 {
+    
+    font-weight: 400;
+    margin-block: 0;
+ }
+ h2{
+    font-weight: 400;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 15px;
+
+ }
+ img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+ }
+
+ .house-hold__header {
+    display: flex;
+    .house-hold__owner__star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+        .off {
+            color: grey;
+        }
+        .on {
+            color: $color-primary;
+        }
+
+    }
+    .house-hold__title{
+        flex-grow : 1;
+    }
+    .house-hold__owner__details{
+        display:flex;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+    .house-hold__owner__badge{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: grey;
+    }
+    & > * {
+        border: 1px solid red;
+    }
+    h3 {
+        margin-block: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-weight: 400;
+    
+    }
+ }
+
+ & .house-hold__tags {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    span{
+        background-color: $color-primary;
+        color:$color-tertiary;
+        padding: 0.3rem 0.1rem;
+        width: 130px;
+        border-radius: 0.7rem;
+        font-size: small;
+    }
+ }
+}
+

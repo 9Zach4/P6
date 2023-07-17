@@ -2,6 +2,7 @@ import { Outlet, createBrowserRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
 import Footer from "../layout/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
+import Accomodation from "../pages/Accomodation/Accomodation";
 import React from "react";
 import Main from "../layout/main/Main";
 
@@ -46,12 +47,8 @@ export const router = createBrowserRouter([
     },
 {
     path : "/accomodation",
-    element: 
-    <>
- 
-    <h1>accomodation</h1>
+    element: <Accomodation />
     
-   </>
 }
   ]
 }
