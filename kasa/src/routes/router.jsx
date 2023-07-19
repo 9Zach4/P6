@@ -5,6 +5,8 @@ import Navbar from "../components/navbar/Navbar";
 import Accomodation from "../pages/Accomodation/Accomodation";
 import React from "react";
 import Main from "../layout/main/Main";
+import About from "../pages/About/About";
+import NotFound from "../pages/notFound/NotFound";
 
 const  HeaderFooter = () => {
     return (
@@ -21,11 +23,10 @@ const  HeaderFooter = () => {
 
 export const router = createBrowserRouter([
 
-
-
-
+   
    {
     element: <HeaderFooter />,
+    errorElement : <NotFound />,
     children: [
    
     {
@@ -37,12 +38,7 @@ export const router = createBrowserRouter([
   
     {
     path : "/about",
-    element: 
-    <>
-    
-    <h1>about</h1> 
-   
-    </>
+    element: <About />
     
     },
 {

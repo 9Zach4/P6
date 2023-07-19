@@ -9,7 +9,7 @@
     gap: 2rem;
     @media screen and (max-width: 767px) {
         text-transform: uppercase;
-        white-space: nowrap;
+        margin-inline: 1rem;
     }
 & > *:first-child {
     margin-right: auto;

@@ -1,0 +1,8 @@
+ @import "../../scss/variables.scss"; 
+
+.about__box {
+    padding-inline: 3rem;
+    @media screen and (max-width: 768px) {
+        padding-inline: 0;
+    }
+}

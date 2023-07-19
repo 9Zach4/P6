@@ -10,4 +10,11 @@
   gap: 20px;
   place-items: center;
   box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+  
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
