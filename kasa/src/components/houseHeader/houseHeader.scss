@@ -2,11 +2,16 @@
 
 .house-hold__header {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
     .house-hold__owner__star{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 0.2rem;
         .off {
             color: grey;
@@ -19,10 +24,23 @@
     .house-hold__title{
         flex-grow : 1;
     }
+    .house-hold__owner{
+        display: flex;
+        flex-direction: column;
+       
+        @media screen and (max-width: 767px) {
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+    }
     .house-hold__owner__details{
         display:flex;
         flex-wrap: nowrap;
         gap: 0.5rem;
+        @media screen and (max-width: 767px) {
+            order: 1 ;
+        }
+        
     }
     .house-hold__owner__badge{
         height: 50px;
@@ -56,6 +74,7 @@
             font-size: small;
         }
         }
+
     h3 {
         margin-block: 0;
         display: flex;
