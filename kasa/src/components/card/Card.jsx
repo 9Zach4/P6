@@ -6,10 +6,13 @@ import { Link } from "react-router-dom";
 
 
 function Card (props) {
-    console.log("props dans card:",props);
+    
+ 
+
     return (
         <div className="card">
-            <Link to="/accomodation">
+            <Link to= "/accomodation" state={{locationId: props.id}}> 
+            {/* /* //state permet de passer des données à la page suivante */}
             <img src={props.imageUrl} alt="" />
               <div className="card__title">{props.title}</div>
             </Link>

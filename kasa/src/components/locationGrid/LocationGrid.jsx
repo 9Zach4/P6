@@ -14,7 +14,7 @@ function LocationGrid() {
     return (
         <div className="grid">
            {houses.map((location) => (
-            <Card key={location.id} title={location.title} imageUrl={location.cover} />
+            <Card key={location.id} title={location.title} imageUrl={location.cover} id = {location.id}/>
       ))}
           
            
