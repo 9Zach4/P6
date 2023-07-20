@@ -23,29 +23,22 @@ const  HeaderFooter = () => {
 
 export const router = createBrowserRouter([
 
-   
    {
     element: <HeaderFooter />,
     errorElement : <NotFound />,
     children: [
-   
     {
       path: "/",
-      element: 
-        <HomePage />
-      
-    },
-  
+      element: <HomePage />
+    }, 
     {
-    path : "/about",
-    element: <About />
-    
+      path : "/about",
+      element: <About />
     },
-{
-    path : "/accomodation",
-    element: <Accomodation />
-    
-}
+    {
+      path : "/accomodation",
+      element: <Accomodation />    
+    }
   ]
 }
 ]);
