@@ -3,22 +3,38 @@ import "./accomodation.scss";
 import HouseDescription from "../../components/HouseDescription/HouseDescription";
 import HouseBanner from "../../components/houseBanner/houseBanner";
 import HouseHeader from "../../components/houseHeader/HouseHeader";
-import { useLocation } from "react-router-dom";
+
 import data from "../../data/dataBase.json"
+import { useParams, useNavigate } from "react-router-dom";  
 
 
 function Accomodation() {
-    const Location = useLocation();
+    // const Location = useLocation();
+    const {id} = useParams()
+    const navigate = useNavigate()
  ; 
     const [selectedHouse, setSelectedHouse] = useState(null);
     
-useEffect((fetchLocationData), []);
+useEffect(() => {
 
-function fetchLocationData() {
-    const locationId = Location.state.locationId;
-    const selectedHouse = data.find((location) => location.id === locationId);
-    console.log("locationData:",selectedHouse);
-    setSelectedHouse(selectedHouse);
+// function fetchLocationData() {
+    const datas = data.find((location) => location.id === locationId);
+
+    if (!datas) {
+        navigate("*");
+    } else {
+        setSelectedHouse(data);
+    }
+}, [id, navigate]);
+
+if (!selectedHouse) {
+    return null;
+
+
+    // const locationId = Location.state.locationId;
+    // const selectedHouse = data.find((location) => location.id === locationId);
+    // console.log("locationData:",selectedHouse);
+    // setSelectedHouse(selectedHouse);
      
 }
 
