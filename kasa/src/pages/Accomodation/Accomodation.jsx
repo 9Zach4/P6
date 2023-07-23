@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./accomodation.scss";
 import HouseDescription from "../../components/HouseDescription/HouseDescription";
 import HouseBanner from "../../components/houseBanner/houseBanner";
@@ -9,22 +9,32 @@ import data from "../../data/dataBase.json"
 
 function Accomodation() {
     const Location = useLocation();
-    console.log("location:",Location);
-    console.log("location.state:",Location.state.locationId); 
+ ; 
+    const [selectedHouse, setSelectedHouse] = useState(null);
     
+useEffect((fetchLocationData), []);
 
-    useEffect(() => {
-        console.log(data);
-    }, []);
+function fetchLocationData() {
+    const locationId = Location.state.locationId;
+    const selectedHouse = data.find((location) => location.id === locationId);
+    console.log("locationData:",selectedHouse);
+    setSelectedHouse(selectedHouse);
+     
+}
+
+if (!selectedHouse) {
+    return <div>Loading...</div>;
+}
+
 
 
     return (
         <div className="house-hold">
-            <HouseBanner />
-            <HouseHeader />
+            <HouseBanner imageUrl={selectedHouse.cover} />
+            <HouseHeader selectedHouse={selectedHouse} />
             <div className="description_box">
-                <HouseDescription />
-                <HouseDescription />
+                <HouseDescription title="Description" content={selectedHouse.description} />
+                <HouseDescription title="Equipements" content={selectedHouse.equipments} />
            </div>
         </div> 
     )

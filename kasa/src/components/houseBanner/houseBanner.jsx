@@ -1,12 +1,11 @@
 import React from "react";
-import imgVent from '../../assets/home_cover.png'
 import "./houseBanner.scss";
 
 
-function HouseBanner() {
+function HouseBanner(props) {
     return(
         <div className= "houseCover">
-            <img src={imgVent} alt="house" />
+            <img src={props.imageUrl} alt="house" />
         </div>
     )
 }

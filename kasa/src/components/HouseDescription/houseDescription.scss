@@ -2,6 +2,7 @@
 
 
      .house-hold__description {
+        flex-basis:50%;
         
     .description__title {
         background-color: $color-primary;
@@ -9,6 +10,7 @@
         padding: 0.2em 1em;
         border-radius: 10px;
         display: flex;
+        margin: 0;
         align-items: center ;
         justify-content: space-between;
         i {
@@ -20,8 +22,10 @@
         background-color: $background-light;
         color: $color-primary;
         padding : 1rem;
+        margin: 0;
         border-radius: 5px;
         position: relative;
+       
         top: -0.3rem;
         z-index: -1;
     }
