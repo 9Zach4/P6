@@ -4,9 +4,10 @@
     color: $color-primary;  
     .description_box {
       display: flex;
-      gap: 1rem;
+      gap: 7rem;
       @media screen and (max-width: 767px) {
         flex-direction: column;
+        gap: 0;
       }
 
 }

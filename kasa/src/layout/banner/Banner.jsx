@@ -17,7 +17,7 @@ function Banner () {
 
     return (
         <div className= { aboutPage ? "about_banner" : "banner" }>
-            {!aboutPage && <h1>Chez vous, partout et ailleurs</h1>}
+            {!aboutPage && <h1 className="banner__title">Chez vous, partout et ailleurs</h1>}
         </div>
     );
 }
