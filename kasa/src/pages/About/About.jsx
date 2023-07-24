@@ -1,12 +1,12 @@
 import React from "react";
 import "./about.scss";
-import HouseBanner from "../../components/houseBanner/houseBanner";
+import Banner from "../../layout/banner/Banner";
 import HouseDescription from "../../components/HouseDescription/HouseDescription";
 
 function About() {
   return (
     <>
-        <HouseBanner />
+        <Banner/>
         <div className="about__box">
            <HouseDescription />
            <HouseDescription />

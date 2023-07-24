@@ -1,13 +1,15 @@
+@import "../../scss/variables.scss";
+
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../../assets/home_cover.png");
     width: 100%;
     position: relative;
-    color: white;
+    color: $color-tertiary;
     place-items: center;
     margin: auto;
     background-size: cover;
     min-height: 140px;
-    border: 1px solid #f5f5f5;
+    border: 1px solid $background-light;
     display: grid;
     border-radius: 2rem;
     margin-bottom: 2rem;
@@ -17,7 +19,47 @@
     content: "";
     inset: 0;
     opacity: 0.5;
-}
-}
 
 
+
+ 
+}
+
+}
+
+.about_banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../../assets/about_cover.png");
+    background-size: cover;
+    min-height: 140px;
+    border: 1px solid $background-light;
+    display: grid;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+ 
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../../assets/about_queeries.png");
+        min-height: 280px;
+
+        
+    }
+
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    white-space: nowrap;
+
+    text-align: center;
+    @media screen and (max-width: 767px) {
+        font-size: 2em;
+        white-space: pre-line;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    
+}
