@@ -6,15 +6,15 @@ import Card from "../card/Card";
 
 
 function LocationGrid() {
-    const [houses, setHouses] = useState([]);
+    const [House, setHouses] = useState([]);
 
     useEffect(() => { setHouses(data); }, []);
      
     //useEffect avec une array vide en second paramètre permet de faire une requête au chargement de la page
     return (
         <div className="grid">
-           {houses.map((location) => (
-            <Card key={location.id} title={location.title} imageUrl={location.cover} id = {location.id}/>
+           {data.map((data) => (
+            <Card key={data.id} title={data.title} cover={data.cover} id ={data.id}/>
       ))}
           
            

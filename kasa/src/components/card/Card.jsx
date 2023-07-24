@@ -1,22 +1,20 @@
-import React from "react";
 import "./card.scss";
-import { Link } from "react-router-dom";
+import  { Link } from "react-router-dom";
+import React from "react";
 
-
-
-
-function Card (props) {
-    
- 
-
+function Card({id, cover, title}) {
     return (
-        <div className="card">
-            <Link to= "/accomodation" state={{locationId: props.id}}> 
-            <img src={props.imageUrl} alt="" />
-              <div className="card__title">{props.title}</div>
-            </Link>
-        </div>
-    );
-}
+    <Link to= {`/accomodation/${id}`}className="card">
+            <img src={cover} alt="" />
+            <div className="card__title">{title}</div>
+        </Link>
 
-export default Card;
+            )
+}
+    
+     
+
+
+export default Card
+
+
