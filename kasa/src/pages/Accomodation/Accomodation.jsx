@@ -29,7 +29,7 @@ function Accomodation() {
 
     return (
         <div className="house-hold">
-            <HouseBanner imgUrl={selectedHouse.cover} />
+            <HouseBanner cover={selectedHouse.cover} />
             <HouseHeader selectedHouse={selectedHouse} />
             <div className="description_box">
                 <HouseDescription title="Description" content={selectedHouse.description} />
@@ -42,18 +42,7 @@ function Accomodation() {
 export default Accomodation;
 
 
-    // const Location = useLocation();
-
-
-
-// function fetchLocationData() {
-    
-
-
-    // const locationId = Location.state.locationId;
-    // const selectedHouse = data.find((location) => location.id === locationId);
-    // console.log("locationData:",selectedHouse);
-    // setSelectedHouse(selectedHouse);
+   
      
 
 

@@ -2,10 +2,10 @@ import React from "react";
 import "./houseBanner.scss";
 
 
-function HouseBanner({imageUrl}) {
+function HouseBanner({cover}) {
     return(
         <div className= "houseCover">
-            <img src={imageUrl} alt="house" />
+            <img src={cover} alt="house" />
         </div>
     )
 }
