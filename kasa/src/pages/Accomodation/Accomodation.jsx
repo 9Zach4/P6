@@ -33,7 +33,11 @@ function Accomodation() {
             <HouseHeader selectedHouse={selectedHouse} />
             <div className="description_box">
                 <HouseDescription title="Description" content={selectedHouse.description} />
-                <HouseDescription title="Equipements" content={selectedHouse.equipments} />
+                <HouseDescription title="Equipements" content=
+                  {selectedHouse.equipments.map((equipment, index) => (
+                    <li key={index}>
+                      {equipment}
+                    </li>))}/>
             </div>
         </div> 
     );

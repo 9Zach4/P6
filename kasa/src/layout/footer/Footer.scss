@@ -5,8 +5,10 @@
   color: $color-tertiary;
   padding: 20px;
   text-align: center;
-  min-height: 100px;
+  height: 10rem;
   display: grid;
+  margin-top: 7rem;
+  margin-bottom: 0;
   gap: 20px;
   place-items: center;
   box-sizing: border-box;
@@ -15,7 +17,7 @@
     height: 13rem;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
     justify-content: center;
   }
 }
+

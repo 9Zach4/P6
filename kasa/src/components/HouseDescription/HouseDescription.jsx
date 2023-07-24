@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./houseDescription.scss";
 
-function houseDescription({title, content}) {
-  return (
+function HouseDescription({ title, content }) {
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
-    <div className="house-hold__description">
-                <p className="description__title">
-                    <span>{title}</span>
-                    <i className="fa-solid fa-chevron-up"></i>
-                </p>
-                <p className="description__content">{content}</p>
-            </div>
+  const toggleCollapse = () => {
+    setIsCollapsed((prevState) => !prevState);
+  };
+
+  return (
+    <div className={`house-hold__description ${isCollapsed ? "collapsed" : ""}`}>
+      <p className="description__title" onClick={toggleCollapse}>
+        <span>{title}</span>
+        <i className={`fa-solid fa-chevron-${isCollapsed ? "down" : "up"}`}></i>
+      </p>
+
+      {!isCollapsed && (
+        <p className="description__content">
+          {content}
+        </p>
+      )}
+    </div>
   );
 }
 
-export default houseDescription;
+export default HouseDescription;
