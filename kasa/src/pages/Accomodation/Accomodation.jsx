@@ -29,7 +29,7 @@ function Accomodation() {
 
     return (
         <div className="house-hold">
-            <HouseBanner cover={selectedHouse.cover} />
+            <HouseBanner pictures={selectedHouse.pictures} />
             <HouseHeader selectedHouse={selectedHouse} />
             <div className="description_box">
                 <HouseDescription title="Description" content={selectedHouse.description} />
