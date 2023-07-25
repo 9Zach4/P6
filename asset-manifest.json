@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kasa/static/css/main.69361f35.css",
+    "main.js": "/kasa/static/js/main.90dc7e2e.js",
+    "static/media/about_queeries.png": "/kasa/static/media/about_queeries.bd299246e269acd81455.png",
+    "static/media/about_cover.png": "/kasa/static/media/about_cover.9438035cca5a38fcb06a.png",
+    "static/media/home_cover.png": "/kasa/static/media/home_cover.84132b0f93bbeaa2fe46.png",
+    "index.html": "/kasa/index.html",
+    "main.69361f35.css.map": "/kasa/static/css/main.69361f35.css.map",
+    "main.90dc7e2e.js.map": "/kasa/static/js/main.90dc7e2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69361f35.css",
+    "static/js/main.90dc7e2e.js"
+  ]
+}
