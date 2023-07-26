@@ -8,20 +8,54 @@ function HouseBanner(props) {
     const [currentPicture, setCurrentPicture] = useState(0);
     
 
-const getClassname = (index) => {
-    if (index === currentPicture) 
-        return "show";
+const getClassName = (index) => {
+    if (index === currentPicture)  return "show";
+       
         return "";
     } ;
     
+    const moveToNext = () => {
+        setCurrentPicture((currentPicture + 1) % pictures.length);
+    };
 
-    return(
-        <div className= "houseCover">
-          
-            {pictures.map((pics, index) => ( <img key={pics} src={pics} alt=""  className= {getClassname ()}></img>
+
+    const moveToPrevious = () => {
+        const indexPicture = currentPicture - 1;
+        if (indexPicture < 0) {
+            setCurrentPicture(pictures.length - 1);
+            return;
+        }
+        setCurrentPicture((currentPicture - 1) % pictures.length);
+    };
+  const arePictures = () => {
+   return pictures && pictures.length > 1;
+   };
+
+   const defautPictures = () => {
+      if (!arePictures()) {
+        return pictures; //
+      }
+   }
+    return (
+        <div className="houseCover">
+          <div className="image__box">
+            {pictures.map((pics, index) => ( 
+              <img key={pics} src={pics} alt="" className={getClassName(index)}/>
             ))}
+          </div> 
+
+          {arePictures () && (<><button className="btn__next" onClick={moveToNext}>
+            <i className="fa-sharp fa-solid fa-chevron-left"></i>
+         </button>
+
+         <span className="img__count"> {currentPicture + 1 } / {pictures.length} </span>
+         
+          <button className="btn__previous" onClick={moveToPrevious}>
+            <i className="fa-sharp fa-solid fa-chevron-right"></i>
+          </button> </>)}
+
         </div>
-    )
+      );
 }
 
 export default HouseBanner;

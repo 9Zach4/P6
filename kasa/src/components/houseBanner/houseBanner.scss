@@ -1,22 +1,75 @@
+@import '../../scss/variables.scss';
 
 .houseCover {
     margin-bottom: 2rem;
     position: relative;
-    height: 20rem;
-    
-    img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset:0;
-    height: 20rem;
-    object-fit: cover;
-    opacity: 0;
-    border-radius: 1rem;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    .show & {
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out 0s;
+    .btn__next {
+        position: absolute;
+        cursor: pointer;
+        top: 0%;
+        bottom: 0%;
+        color: $color-tertiary;
+        width: 5rem;
+        font-size: 6rem;
+        border: none;
+        left: 2%;
+        background-color: transparent;
+        @media  screen and (max-width:768px) {
+            font-size: 2rem;
+            
+        }
+        
     }
+    .btn__previous {
+        position: absolute;
+        cursor: pointer;
+        top: 0%;
+        bottom: 0%;
+        right: 2%;
+        color: $color-tertiary;
+        width: 5rem;
+        font-size: 6rem;
+        border: none;
+        background-color: transparent;
+        @media  screen and (max-width:768px) {
+            font-size: 2rem;
+            
+        }
+      
+    }
+    .img__count{
+        
+        color: $color-tertiary;
+        font-size: 2rem;
+        position: absolute;
+      
+        left: 47.5%;
+        bottom: 8%;
+        @media  screen and (max-width:768px) {
+            display: none;
+            
+        }
+    }
+    .image__box {
+        position: relative;
+        height: 20rem;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            height: 20rem;
+            object-fit: cover;
+            opacity: 0;
+            border-radius: 1rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transition: opacity 1s ease-in-out 0s;
+
+            &.show {
+                opacity: 1;
+            }
+          
+        }
     }
 }
