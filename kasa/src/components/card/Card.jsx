@@ -8,7 +8,6 @@ function Card({id, cover, title}) {
             <img src={cover} alt="" />
             <div className="card__title">{title}</div>
         </Link>
-
             )
 }
     

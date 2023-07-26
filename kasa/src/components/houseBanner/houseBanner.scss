@@ -37,17 +37,14 @@
         }
       
     }
-    .img__count{
-        
+    .img__count{  
         color: $color-tertiary;
         font-size: 2rem;
         position: absolute;
-      
         left: 47.5%;
         bottom: 8%;
         @media  screen and (max-width:768px) {
-            display: none;
-            
+            display: none;     
         }
     }
     .image__box {

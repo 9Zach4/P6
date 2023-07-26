@@ -31,11 +31,7 @@ const getClassName = (index) => {
    return pictures && pictures.length > 1;
    };
 
-   const defautPictures = () => {
-      if (!arePictures()) {
-        return pictures; //
-      }
-   }
+   
     return (
         <div className="houseCover">
           <div className="image__box">
@@ -44,13 +40,13 @@ const getClassName = (index) => {
             ))}
           </div> 
 
-          {arePictures () && (<><button className="btn__next" onClick={moveToNext}>
+          {arePictures () && (<><button className="btn__next" onClick={moveToPrevious}>
             <i className="fa-sharp fa-solid fa-chevron-left"></i>
          </button>
 
          <span className="img__count"> {currentPicture + 1 } / {pictures.length} </span>
          
-          <button className="btn__previous" onClick={moveToPrevious}>
+          <button className="btn__previous" onClick={moveToNext}>
             <i className="fa-sharp fa-solid fa-chevron-right"></i>
           </button> </>)}
 

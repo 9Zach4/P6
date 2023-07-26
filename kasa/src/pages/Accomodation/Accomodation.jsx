@@ -12,14 +12,13 @@ function Accomodation() {
     const navigate = useNavigate();
 
     const [selectedHouse, setSelectedHouse] = useState(null);
-    
     useEffect(() => {
         const datas = data.find((location) => location.id === id);
 
         if (!datas) {
             navigate("*");
         } else {
-            setSelectedHouse(datas); // Use `datas` instead of `data`
+            setSelectedHouse(datas);
         }
     }, [id, navigate]);
 
