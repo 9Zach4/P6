@@ -16,7 +16,7 @@ function HouseDescription({ title, content }) {
       </p>
 
       {!isCollapsed && (
-        <p className="description__content">
+        <p className="description__content fade-in">
           {content}
         </p>
       )}
