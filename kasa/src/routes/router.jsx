@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
     errorElement : <NotFound />,
     children: [
     {
-      path: "/kasa/",
+      path: "/P6/",
       element: <HomePage />
     }, 
     {
