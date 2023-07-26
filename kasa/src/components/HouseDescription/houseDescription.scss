@@ -13,11 +13,18 @@
         margin: 0;
         align-items: center ;
         justify-content: space-between;
+    
         i {
             font-size: 2rem;
             cursor: pointer;
+            &:active {
+                transform: rotate(180deg);
+                transition: all 0.3s;
+            }
         }
     }
+    
+
     .description__content {
         background-color: $background-light;
         color: $color-primary;
@@ -28,7 +35,11 @@
         margin-bottom: 2rem;
         top: -0.3rem;
         z-index: -1;
+       
+        
     }
 
- }
+    }
+    
+ 
 
