@@ -1,7 +1,7 @@
 import React from "react";
-import "./LocationGrid.scss";
+import "./locationGrid.scss";
 import data from "../../data/dataBase.json";
-import Card from "../card/Card";
+import Card from "../Card/Card";
 
 function LocationGrid() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import "./notFound.scss";
-import Main from "../../layout/main/Main";
+import Main from "../../layout/Main/Main";
 import { Link } from "react-router-dom";
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../layout/footer/Footer";
+import Navbar from "../../layout/Navbar/Navbar";
+import Footer from "../../layout/Footer/Footer";
 
 function NotFound() {
     return (

@@ -1,12 +1,12 @@
 import { Outlet, createBrowserRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
-import Footer from "../layout/footer/Footer";
-import Navbar from "../components/navbar/Navbar";
+import Footer from "../layout/Footer/Footer";
+import Navbar from "../layout/Navbar/Navbar";
 import Accomodation from "../pages/Accomodation/Accomodation";
 import React from "react";
-import Main from "../layout/main/Main";
+import Main from "../layout/Main/Main";
 import About from "../pages/About/About";
-import NotFound from "../pages/notFound/NotFound";
+import NotFound from "../pages/NotFound/NotFound";
 
 const  HeaderFooter = () => {
     return (

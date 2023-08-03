@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-import Banner from "../../layout/banner/Banner";
+import Banner from "../../layout/Banner/Banner";
 import HouseDescription from "../../components/HouseDescription/HouseDescription";
 import aboutData from "../../data/aboutData";
 
