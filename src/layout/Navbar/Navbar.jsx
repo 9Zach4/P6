@@ -11,7 +11,7 @@ function Navbar() {
       <div className="navbar__logo">
         <img src ={ logo } alt="logo kasa"/>
       </div>
-      <NavLink to="/P6/">
+      <NavLink to="/">
         <div>Accueil</div>
       </NavLink>
       <NavLink to="/about">
