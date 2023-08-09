@@ -25,7 +25,7 @@ function HouseHeader(props) {
                 </h3>
 
                 <div className="house-hold__owner__badge">
-                    <img src={props.selectedHouse.host.picture} alt="" />
+                    <img src={props.selectedHouse.host.picture} alt="Propiétaire pics" />
                 </div>
 
             </div>

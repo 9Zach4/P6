@@ -3,9 +3,9 @@ import "./accomodation.scss";
 import HouseDescription from "../../components/HouseDescription/HouseDescription";
 import HouseBanner from "../../components/HouseBanner/HouseBanner";
 import HouseHeader from "../../components/HouseHeader/HouseHeader";
-
 import data from "../../data/dataBase.json";
 import { useParams, useNavigate } from "react-router-dom";  
+
 
 function Accomodation() {
     const { id } = useParams();

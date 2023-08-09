@@ -36,7 +36,7 @@ const getClassName = (index) => {
         <div className="houseCover">
           <div className="image__box">
             {pictures.map((pics, index) => ( 
-              <img key={pics} src={pics} alt="" className={getClassName(index)}/>
+              <img key={pics} src={pics} alt="Appartements" className={getClassName(index)}/>
             ))}
           </div> 
 

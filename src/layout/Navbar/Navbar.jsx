@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src ={ logo } alt="logo kasa"/>
+        <img src = { logo } alt="logo kasa"/>
       </div>
       <NavLink to="/">
         <div>Accueil</div>
